@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --orange-color: rgba(255, 0, 0, 1);
+  --main-color: rgba(255, 255, 255, 1);
+  --second-color: rgba(106, 106, 106, 1);
+  --third-color: rgba(178, 178, 178, 1);
+  --bg-color: rgba(40, 39, 44, 1);
+  --nunito: 'Nunito Sans', sans-serif;
+  --open: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 1088px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../assets/Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header_all {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.links {
+  display: flex;
+}
+
+.links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header_all {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 23px;
+  z-index: 3;
+}
+
+.bar_opasity {
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #FFFFFF33;
+}
+
+.logo span {
+  padding-right: 5px;
+  color: var(--orange-color);
+  font-weight: 900;
+}
+
+.logo {
+  font-family: var(--nunito);
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.links a {
+  padding: 31px 40px;
+  text-decoration: none;
+  color: var(--main-color);
+  transition: 0.5s;
+  font-family: var(--nunito);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container_main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  margin-top: 164px;
+  margin-bottom: 10px;
+}
+
+.container_main_buttons a {
+  background-color: var(--orange-color);
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 22px 55px;
+  color: var(--main-color);
+  font-family: var(--nunito);
+  font-weight: bold;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.container_main_buttons a:nth-child(2) {
+  background-color: var(--main-color);
+  color: var(--orange-color);
+  padding: 22px 44px;
+}
+
+.container_main h1 {
+  font-size: 90px;
+  font-weight: 900;
+  font-family: var(--nunito);
+  color: var(--main-color);
+}
+
+.container_main p {
+  font-size: 16px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-family: var(--nunito);
+  line-height: 22px;
+  margin-bottom: 54px;
+}
+
+.container_main_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header::before {
+  content: url(../assets/Icon\ Arrow\ Down.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  background-color: var(--orange-color);
+  border-radius: 50%;
+  width: 51px;
+  height: 51px;
+  bottom: -25px;
+  z-index: 2;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* MAIN */
+
+.blog_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+.blog_elements {
+  display: flex;
+  justify-content: space-between;
+  width: 1/3;
+}
+
+.blog_elements_element h3 {
+  font-family: var(--nunito);
+  font-size: 19px;
+  margin: 25px 0 15px 0;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.blog_elements_element p {
+  font-family: var(--open);
+  font-weight: 300;
+  line-height: 19px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: var(--second-color);
+}
+
+.blog_button {
+  font-family: var(--nunito);
+  font-weight: bold;
+  font-size: 14px;
+  background-color: var(--orange-color);
+  border-radius: 30px;
+  padding: 9px 20px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.blog_main h2 {
+  font-family: var(--nunito);
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 91px;
+  margin-bottom: 35px;
+}
+
+.blog_main h2::before,
+.blog_main h2::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: var(--orange-color);
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px 0 10px;
+}
+
+/* service MAAIN */
+.service_main {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 100px 0;
+}
+
+.service_elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service_elements_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 231px;
+  margin: 0 20px;
+}
+
+.service_button {
+  text-decoration: none;
+  font-family: var(--nunito);
+  font-weight: bold;
+  font-size: 14px;
+  background-color: var(--orange-color);
+  border-radius: 30px;
+  padding: 9px 20px;
+  color: var(--main-color);
+}
+
+.service_main h2 {
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--nunito);
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--main-color);
+}
+
+.service_main h2::before,
+.service_main h2::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: var(--orange-color);
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px 0 10px;
+}
+
+.service_elements_element h3 {
+  color: var(--main-color);
+  font-family: var(--nunito);
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+.service_elements_element p {
+  font-family: var(--open);
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--third-color);
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+/* CONTACT */
+
+.main_contact {
+  position: relative;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.main_contact h2 {
+  font-family: var(--nunito);
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 35px;
+}
+
+.main_contact h2::before,
+.main_contact h2::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: var(--orange-color);
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 140px;
+}
+
+input[type="text"]::placeholder,
+input[type="e-mail"]::placeholder,
+textarea::placeholder {
+  font-size: 16px;
+  font-family: var(--nunito);
+  font-weight: 400;
+  color: #B2B2B2;
+}
+
+input[type="text"],
+input[type="e-mail"],
+textarea {
+  padding: 8px 12px;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="e-mail"]:focus,
+textarea:focus {
+  border: 1px solid var(--orange-color);
+  box-shadow: 0px 1px 6px #FF00004D;
+}
+
+.main_contact_button {
+  background-color: var(--main-color);
+  border-radius: 40px;
+  border: 1px solid var(--orange-color);
+  padding: 10px 52px;
+  box-shadow: 0px 3px 6px rgba(255, 0, 0, 0.3);
+  align-self: flex-end;
+  margin-top: 30px;
+  color: var(--orange-color);
+}
+
+.cars_img {
+  width: 444px;
+  height: 315px;
+}
+
+.checkbox_wrape {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkbox_wrape p {
+  color: var(--third-color);
+  margin-left: 45px;
+}
+
+.checkbox_wrape input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.spani {
+  padding: 5px 15px;
+  flex-shrink: 0;
+  flex-basis: 22px;
+  border: 1px solid rgba(209, 209, 209, 1);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.checkbox input:checked+span {
+  background-image: url("../assets/Icon Check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(40, 39, 44, 1);
+}
+
+.nav_menu {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.nav_menu ul {
+  margin-right: 141px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 22px;
+}
+
+.nav_menu li {
+  padding: 7px;
+}
+
+footer .logo {
+  font-family: var(--nunito);
+  padding-top: 40px;
+}
+
+footer .logo img {
+  height: 19px;
+  width: 16px;
+
+}
+
+.nav_menu a {
+  font-family: var(--nunito);
+  font-weight: bold;
+  font-size: 14px;
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+footer a:hover {
+  color: var(--orange-color);
+  transition: 0.5s;
+}
+
+.nav_menu span {
+  display: flex;
+  color: var(--main-color);
+  font-family: var(--nunito);
+  font-size: 12px;
+  margin-left: 300px;
+  align-items: flex-end;
+}
